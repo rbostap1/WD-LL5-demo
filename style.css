@@ -15,7 +15,7 @@ body {
 
 /* Header polish */
 h1 {
-  padding: 8px;
+  padding: 5px;
   border-radius: 4px;
 }
 
@@ -27,10 +27,16 @@ img {
 
 /* Optional decorative border for each tile */
 .border-tile {
-  border: 20px solid transparent;
+  border: 15px solid transparent;
   border-image: url('assets/wood.jpg') 30 round;
-  padding: 5px;
+  padding: 3px;
   background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.border-tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
 /* Optional caption style if you add labels under your tiles */
